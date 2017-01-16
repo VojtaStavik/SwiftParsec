@@ -1,7 +1,7 @@
 import Foundation
 
 func isSpace (_ c: Character) -> Bool {
-  let whitespaces = CharacterSet.whitespaces
+  let whitespaces = CharacterSet.whitespacesAndNewlines
   return String(c).rangeOfCharacter(from: whitespaces) != nil
 }
 
