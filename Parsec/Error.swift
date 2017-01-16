@@ -4,7 +4,7 @@
     and a list of error messages (`Message`). A `ParseError`
     can be returned by the function `parse`.
 */
-public struct ParseError: CustomStringConvertible {
+public struct ParseError: Error, CustomStringConvertible {
   var pos: SourcePos
   var messages: [Message]
 
